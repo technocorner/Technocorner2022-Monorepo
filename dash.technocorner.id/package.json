@@ -1,0 +1,36 @@
+{
+  "name": "dash.technocorner.id",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "latest",
+    "@sentry/nextjs": "latest",
+    "@tailwindcss/line-clamp": "latest",
+    "firebase": "latest",
+    "next": "latest",
+    "nprogress": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hot-toast": "latest"
+  },
+  "devDependencies": {
+    "@google-cloud/firestore": "latest",
+    "@netlify/plugin-nextjs": "latest",
+    "@types/node": "latest",
+    "@types/nprogress": "latest",
+    "@types/react": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "netlify-cli": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vercel": "latest"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "link.technocorner.id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "export NODE_ENV=production && node dist/index.js",
+    "dev": "export NODE_ENV=development && nodemon",
+    "test": "export NODE_ENV=test && nodemon",
+    "build": "tsc && grunt",
+    "build-deta": "cp -r dist deploy/deta && rm deploy/deta/dist/netlify.js",
+    "build-netlify": "netlify-lambda --config ./netlify.webpack.function.js build dist && mv deploy/netlify/netlify.js deploy/netlify/index.js",
+    "build-vercel": "cp -r dist deploy/vercel && rm deploy/vercel/dist/netlify.js",
+    "build-all": "concurrently \"npm run build-deta\" \"npm run build-netlify\" \"npm run build-vercel\"",
+    "deploy-deta": "deta deploy deploy/deta",
+    "deploy-netlify": "netlify deploy --prod",
+    "deploy-vercel": "vercel --prod deploy/vercel",
+    "deploy-all": "concurrently \"npm run deploy-deta\" \"npm run deploy-netlify\" \"npm run deploy-vercel\"",
+    "rm-build-all": "rm -r tsconfig.tsbuildinfo dist/ deploy/deta/dist/ deploy/netlify/ deploy/vercel/dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "latest",
+    "express": "latest",
+    "firebase-admin": "latest",
+    "helmet": "latest",
+    "request": "latest"
+  },
+  "devDependencies": {
+    "@firebase/app-compat": "latest",
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/request": "latest",
+    "concurrently": "latest",
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "netlify-cli": "latest",
+    "netlify-lambda": "latest",
+    "nodemon": "latest",
+    "serverless-http": "latest",
+    "ts-node": "latest",
+    "tslint": "latest",
+    "typescript": "latest",
+    "uglify-js": "latest",
+    "vercel": "latest",
+    "webpack-node-externals": "latest"
+  }
+}

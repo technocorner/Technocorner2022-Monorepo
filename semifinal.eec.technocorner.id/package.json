@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "latest",
+    "next": "latest",
+    "nprogress": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hot-toast": "latest",
+    "react-redux": "latest"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "latest",
+    "@tailwindcss/line-clamp": "latest",
+    "@types/node": "latest",
+    "@types/nprogress": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "postcss-preset-env": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

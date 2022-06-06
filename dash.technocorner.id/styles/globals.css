@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Mechsuit";
+    src: url("/fonts/mechsuit/Mechsuit.otf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "GothamBook";
+    font-weight: "300";
+    src: url("/fonts/gotham/GothamBook.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Gotham";
+    font-weight: "500";
+    src: url("/fonts/gotham/GothamMedium.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "GothamBold";
+    font-weight: "bold";
+    src: url("/fonts/gotham/GothamBold.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CAMechanoCondensed";
+    font-stretch: "condensed";
+    src: url("/fonts/ca_mechano/CAMechano_v1010-Condensed.woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CAMechano";
+    font-stretch: "normal";
+    src: url("/fonts/ca_mechano/CAMechano_v1010-Regular.woff2");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "CAMechanoWide";
+    font-stretch: "expanded";
+    src: url("/fonts/ca_mechano/CAMechano_v1010-Wide.woff2");
+    font-display: swap;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  /* display: none; */
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background: #787878;
+}
+
+.custom-scrollbar {
+  /* -ms-overflow-style: none; IE and Edge */
+  /* scrollbar-width: none; Firefox */
+  scrollbar-width: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/*Debug overflow */
+/* * {
+  outline: 1px solid #f00 !important; 
+} */

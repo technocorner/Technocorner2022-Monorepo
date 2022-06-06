@@ -1,0 +1,15 @@
+export default {
+  OK: 200,
+  BadRequest: 400,
+  Unauthorized: 401,
+  Forbidden: 403,
+  NotFound: 404,
+  MethodNotAllowed: 405,
+  NotAcceptable: 406,
+  RequestTimeout: 408,
+  Conflict: 409,
+  Gone: 410,
+  PayloadTooLarge: 413,
+  ImTeapot: 418,
+  InternalServerError: 500,
+};

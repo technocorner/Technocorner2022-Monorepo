@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output-style.css">
+    
+    <title>16 Besar</title>
+</head>
+<body class="bg-timerbg-img bg-no-repeat bg-cover text-white font-[Gotham]">
+    <div class="flex flex-col my-10">
+        <p class="flex justify-center font-[Mechsuit] mb-4 text-2xl">Transporter</p>
+        <p class="flex justify-center font-[Gotham] font-bold mb-4 text-[28px]">Babak 16 Besar</p>
+        <p class="flex justify-center"><input placeholder="Nama Tim" class="text-black text-center placeholder:italic placeholder:text-slate-400 block bg-white w-[500px] border border-slate-300 rounded-md py-2 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 placeholder:text-base placeholder:font-normal text-lg font-bold"></p>
+    </div>
+    <div class="flex flex-col items-center space-y-5 mb-12">
+        <div class="flex items-center justify-center text-[150px] space-x-14 p-2 text-center border border-[#F0F0F0]/[0.3] bg-[#fcfcfc]/[0.06] rounded-2xl w-[1000px] pl-[30px] pr-[30px] backdrop-blur-[20px]">
+            <div class="flex items-center w-[500px]">
+                <p>0</p>
+                <p id ="min" class="">4</p>
+            </div>
+            <div class="flex items-center w-[250px]">
+                <p class="">:</p>
+            </div>
+            <div class="flex items-center w-[500px]">
+                <p id ="sec" class="">00</p>
+            </div>
+            <div class="flex items-center w-[250px]">
+                <p class="">:</p>
+            </div>
+            <div class="flex items-center w-[500px]">
+                <p id ="mili" class="">00</p>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center space-x-4">
+            <button id="start" class="font-normal text-base px-4 py-2 bg-[#04BFAD] rounded-full">Start</button>
+            <button id="reset" class="font-normal text-base px-4 py-2 border border-[#F0F0F0]/[0.3] bg-[#fcfcfc]/[0.06] rounded-full">Reset</button>
+            <button id="stop" class="font-normal text-base px-4 py-2 bg-[#EF476F] rounded-full">Stop</button>
+        </div>
+    </div>
+    <div class="flex justify-evenly mr-9">
+        <!-- point -->
+        <div class="space-y-6 items-center flex flex-col">
+            <div class="flex space-x-4 text-xl font-medium">
+                <button id="minus-blue" class=" text-2xl">-1</button>
+                <p class=" bg-sky-400 px-7 py-4 rounded-xl  w-[140px] text-center">Blue</p>
+                <button id="plus-blue" class=" text-2xl">+1</button>
+            </div>
+            <div class="flex space-x-4 text-xl font-medium">
+                <button id="minus-pink" class=" text-2xl">-1</button>
+                <p class=" bg-pink-500 px-7 py-4 rounded-xl  w-[140px] text-center">Pink</p>
+                <button id="plus-pink" class=" text-2xl">+1</button>  
+            </div>
+            <div class="flex space-x-4 text-xl font-medium">
+                <button id="minus-orange" class=" text-2xl">-3</button>
+                <p class=" bg-orange-500 px-7 py-4 rounded-xl  w-[140px] text-center">Orange</p>
+                <button id="plus-orange" class=" text-2xl">+3</button>               
+            </div>
+        </div>
+        <div class="flex flex-col items-center space-y-4">
+            <p class="font-medium text-xl">Point</p>
+            <p id="point" class=" text-4xl w-[150px] h-[100px] p-[28px] rounded-2xl border border-[#04BFAD]/[0.6] bg-[#04BFAD]/[0.3] backdrop-blur-2xl text-center">0</p>
+            <button id="reset-point" class="font-normal text-base px-4 py-2 border border-[#F0F0F0]/[0.3] bg-[#fcfcfc]/[0.06] rounded-full" >Reset</button>
+        </div>
+        <!-- total nilai -->
+        <div class="flex flex-col items-center space-y-4">
+            <p class="font-medium text-3xl">Total Point</p>
+            <p id="total" class=" text-[150px] w-[250px] h-[250px] rounded-2xl border border-[#F0F0F0]/[0.3] bg-[#fcfcfc]/[0.06] backdrop-blur-2xl text-center">0</p>
+        </div>
+        <!-- penalty -->
+        <div class="flex flex-col items-center space-y-4">
+            <p class="font-medium text-xl">Penalty</p>
+            <p id="penalty" class=" text-4xl w-[150px] h-[100px] p-[28px] rounded-2xl border border-[#EF476F]/[0.6] bg-[#EF476F]/[0.3] backdrop-blur-2xl text-center">0</p>
+            <button id="reset-penalty" class="font-normal text-base px-4 py-2 border border-[#F0F0F0]/[0.3] bg-[#fcfcfc]/[0.06] rounded-full" >Reset</button>
+        </div>
+        <div class="space-y-6">
+            <div class="flex space-x-4 text-xl font-medium">
+                <button id="plus-penalty2" class=" text-2xl">+</button>
+                <p class=" bg-white text-[#EF476F] px-7 py-4 rounded-xl  w-[140px] text-center">-2</p>
+                <button id="minus-penalty2" class=" text-2xl">-</button>
+            </div>
+            <div class="flex space-x-4 text-xl font-medium">
+                <button id="plus-penalty3" class=" text-2xl">+</button>
+                <p class=" bg-white text-[#EF476F] px-7 py-4 rounded-xl  w-[140px] text-center">-3</p>
+                <button id="minus-penalty3" class=" text-2xl">-</button>
+            </div>
+            <div class="flex space-x-4 text-xl font-medium">
+                <button id="plus-penalty4" class=" text-2xl">+</button>
+                <p class=" bg-white text-[#EF476F] px-7 py-4 rounded-xl  w-[140px] text-center">-4</p>
+                <button id="minus-penalty4" class=" text-2xl">-</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/16.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./Assets/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer Penyisihan</title>
+  </head>
+
+  <body>
+    <!-- Tombol buka popup (untuk debugging) -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal countdown 3-2-1 -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!-- <span class="close">&times;</span> -->
+        <span class="close"></span>
+        <h1 id="tigadetik">3</h1>
+      </div>
+    </div>
+
+    <div class="title">
+      <h1>Line Follower</h1>
+    </div>
+    <input type="text" class="nama-tim" />
+
+    <section class="countdown">
+      <div class="wrapper">
+        <div class="countupdown">
+          <span id="minute1">04</span><span>:</span> <span id="second1">00</span
+          ><span>.</span>
+          <span id="millisecond1">00</span>
+        </div>
+        <div class="cd-buttons">
+          <button id="start" onclick="start1()">Start</button>
+          <button id="stop" onclick="stop1()">Stop</button>
+          <button onclick="reset1()">Reset</button>
+        </div>
+      </div>
+
+      <button id="startboth" onclick="start(); start2();">Start both</button>
+      <div class="wrapper">
+        <div class="countupdown">
+          <span id="minute2">00</span><span>:</span> <span id="second2">00</span
+          ><span>.</span>
+          <span id="millisecond2">00</span>
+        </div>
+
+        <div class="cd-buttons">
+          <button onclick="start2()">Start</button>
+          <button onclick="stop2()">Stop</button>
+          <button onclick="reset2()">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="counter">
+      <div class="wrapper" id="counter1">
+        <h1>Checkpoint</h1>
+        <div id="count3" class="count">0</div>
+        <div class="ct-buttons">
+          <button id="minus3" class="btn1">-</button>
+          <button id="reset3" class="btn1">Reset</button>
+          <button id="plus3" class="btn1">+</button>
+        </div>
+      </div>
+
+      <div class="wrapper" id="counter2">
+        <h1>Retry</h1>
+        <div id="count4" class="count">0</div>
+        <div class="ct-buttons">
+          <button id="minus4" class="btn2">-</button>
+          <button id="reset4" class="btn2">Reset</button>
+          <button id="plus4" class="btn2">+</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Assets/js/keybind.js"></script>
+    <script src="./Assets/js/counter.js"></script>
+    <script src="./Assets/js/countdown.js"></script>
+  </body>
+</html>

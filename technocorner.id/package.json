@@ -1,0 +1,51 @@
+{
+  "name": "technocorner.id",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "latest",
+    "@heroicons/react": "latest",
+    "@sentry/nextjs": "latest",
+    "@tailwindcss/line-clamp": "latest",
+    "@types/aos": "latest",
+    "@types/react-dom": "latest",
+    "aos": "latest",
+    "framer-motion": "latest",
+    "next": "latest",
+    "nprogress": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-elastic-carousel": "latest",
+    "react-google-login": "latest",
+    "react-hot-toast": "latest",
+    "react-icons": "latest",
+    "react-redux": "latest",
+    "react-responsive-carousel": "latest",
+    "react-scroll": "latest",
+    "react-slick": "latest",
+    "save-dev": "latest",
+    "slick-carousel": "latest",
+    "styled-components": "latest"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "latest",
+    "@types/node": "latest",
+    "@types/nprogress": "latest",
+    "@types/react": "latest",
+    "@types/react-scroll": "latest",
+    "@types/react-slick": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "netlify-cli": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vercel": "latest"
+  }
+}
